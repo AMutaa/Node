@@ -7,7 +7,14 @@ app.get("/", function(req, res) {
 });
 
 // "/bye" => "Goodbye!"
+app.get("/bye", function(req, res) {
+  res.send("Goodbye!");
+});
 
+// "/dog" => "MEOW"
+app.get("/dog", function(req, res) {
+  res.send("MEOW!");
+});
 //Tell Express to listen for requests(start server)
 
 // app.listen(3000, () => console.log("Server has started!!!"));
