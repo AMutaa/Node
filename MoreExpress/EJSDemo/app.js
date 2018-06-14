@@ -12,6 +12,28 @@ app.get('/fallinlovewith/:thing', function (req, res) {
  });
 });
 
+app.get('/posts', function (req, res) {
+ var posts = [{
+   title: 'Post 1',
+   author: 'Suzie'
+  },
+
+  {
+   title: 'My adorable pet bunny',
+   author: 'Charlie'
+  },
+
+  {
+   title: 'Can you believe this Pomsky',
+   author: 'Pius'
+  }
+ ];
+
+ res.render('posts.ejs', {
+  posts: posts
+ });
+})
+
 
 
 
